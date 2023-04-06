@@ -1,4 +1,5 @@
 var express = require('express');
+var indexController = require('../controllers/indexController');
 var router = express.Router();
 
 
@@ -9,8 +10,6 @@ router.get('/login', controllers.login);
 
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+router.get('/', indexController.index);
 
 module.exports = router;
