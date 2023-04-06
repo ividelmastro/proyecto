@@ -1,12 +1,12 @@
 let loginController = {
     index: function(req,res){
-        return res.send('login')
+        return res.render('login')
     },
     profile: function(req,res){
-        return res.send('profile')
+        return res.render('profile')
     },
     edit: function(req,res){
-        return res.send('profile-edit')
+        return res.render('profile-edit')
     }
     
 }

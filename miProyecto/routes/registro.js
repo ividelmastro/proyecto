@@ -1,7 +1,8 @@
 let express = require('express');
 let router = express.Router();
-let reh=gistrocontroller = require('../controlles/registrocontroller');
+let registroControllers = require('../controllers/registroController.js');
 
-router.get('/', registrocontroller.index);
+router.get('/', registroControllers.index);
+
 
 module.exports = router;

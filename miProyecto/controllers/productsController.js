@@ -1,14 +1,14 @@
-let database = require('../db/data.js');
-let productController = {
+let db = require('../db/data.js');
+let productsController = {
     index: function(req,res){
-        return res.render('index', {productos: database.lista})
+        return res.render('index', {productos: db.lista})
     },
     add: function(req,res){
         return res.render('product-add')
     },
     show: function(req,res){
-        return res.render('product', {productos: database.lista})
+        return res.render('product', {productos: db.lista})
     }
 }
 
-module.exports = productController;
+module.exports = productsController;
